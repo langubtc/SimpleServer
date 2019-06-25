@@ -27,7 +27,7 @@ class ServerInfo(models.Model):
         (2,'备用中'),
         (3,'损坏')
     ]
-   
+
     server_name = models.CharField(max_length=50,verbose_name='主机名')
     ip = models.OneToOneField('Ip',verbose_name="主机IP",on_delete=models.CASCADE)
     disk = models.FloatField(verbose_name='磁盘容量')
